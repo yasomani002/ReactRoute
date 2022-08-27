@@ -27,9 +27,23 @@ export default function NavBar() {
       <Grid className={classes.root}>
         <div className={classes.div}>Logo</div>
         <nav className={classes.navBar}>
-          <Link className={classes.navBarLink} to="/">Home</Link>
-          <Link className={classes.navBarLink} to="/service">Service</Link>
-          <Link className={classes.navBarLink} to="/contact">Contact</Link>
+          {
+            localStorage.getItem("user_infor") ?
+              (
+                <>
+                <Link className={classes.navBarLink} to="/home">Home</Link>
+                <Link className={classes.navBarLink} to="/service">Service</Link>
+                <Link className={classes.navBarLink} to="/contact">Contact</Link>
+                </>
+              ) : (
+                <>
+                <Link className={classes.navBarLink} to="/Registration">Regidration</Link>
+                <Link className={classes.navBarLink} to={"/login"}>Login</Link>
+                </>
+              )
+          }
+
+
         </nav>
       </Grid>
     </>

@@ -16,6 +16,7 @@ export default function Contact() {
   const classes = useStyle()
   return (
     <>
+    <NavBar />
     <Grid className={classes.root}>
       <LoginCard />
       </Grid>

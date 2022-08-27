@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 export default function Service() {
     return(
         <>
+        <NavBar />
         <ProductCard />
         </>
     )
