@@ -24,7 +24,7 @@ function App() {
           <Route exact path="/" element={<Registration />} />
           <Route path="*" element={<Registration />} />
         </Routes>
-      </div>
+      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     </>
   );
 }
